@@ -1,0 +1,17 @@
+@mixin wrapper-mob() {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@mixin wrapper-tablet() {
+  width: 708px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+@mixin wrapper-desktop() {
+  width: 1200px;
+  padding: 0 120px;
+  margin: 0 auto;
+}
