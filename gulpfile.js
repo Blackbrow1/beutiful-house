@@ -169,6 +169,13 @@ function images() {
 
 exports.images = images;
 
+function copySvg() {
+  return src('src/img/sprite.svg')
+  .pipe(dest('dist/img/'));
+};
+
+exports.copySvg = copySvg;
+
 function watcher() {
     watch('src/**/*.html', html);
     watch('src/**/*.html', copyHtml);
@@ -177,6 +184,7 @@ function watcher() {
     watch('src/css/normalize.css', normalizeCss);
     watch('src/js/*.js', scripts);
     watch('src/img/*.{jpg,jpeg,png,gif,svg}', images);
+    watch('src/img/sprite.svg', copySvg);
     watch('src/img/*.{eot,ttf,otf,otc,ttc,woff,woff2,svg}', fonts);
 };
 
@@ -197,5 +205,5 @@ function server() {
     });
 };
 
-exports.default = parallel(series(clear, html, copyHtml, normalizeCss, styles, copyStyles, fonts, images, scripts, server), watcher);
-exports.dev = series(clear, html, copyHtml, normalizeCss, styles, copyStyles, fonts, images, scripts);
+exports.default = parallel(series(clear, html, copyHtml, normalizeCss, styles, copyStyles, fonts, images, copySvg, scripts, server), watcher);
+exports.dev = series(clear, html, copyHtml, normalizeCss, styles, copyStyles, fonts, images, copySvg, scripts);

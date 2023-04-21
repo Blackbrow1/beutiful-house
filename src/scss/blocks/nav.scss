@@ -1,0 +1,47 @@
+.nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: auto;
+  background-color: $tech-color;
+  padding-top: 24px;
+  z-index: 2;
+  display: none;
+}
+
+.nav__list {
+  @include clear-list;
+}
+
+.nav__item {
+  margin-bottom: 16px;
+  color: $basic-white;
+  line-height: 1.5;
+  font-size: 14px;
+
+  a {
+    text-decoration: none;
+    color: $basic-white;
+  }
+}
+
+.nav__materials {
+  @include clear-list;
+  @include wrapper-mob;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: auto;
+  background-color: $tech-color;
+  padding-top: 73px;
+  z-index: 3;
+  display: none;
+}
+
+.nav__materials-item {
+  margin-bottom: 16px;
+}

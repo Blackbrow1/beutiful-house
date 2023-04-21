@@ -1,11 +1,11 @@
 @mixin wrapper-mob() {
-  width: 280px;
+  width: calc(100vw - 40px);
   padding: 0 20px;
   margin: 0 auto;
 }
 
 @mixin wrapper-tablet() {
-  width: 708px;
+  min-width: 708px;
   padding: 0 30px;
   margin: 0 auto;
 }

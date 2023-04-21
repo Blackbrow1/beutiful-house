@@ -1,3 +1,79 @@
-.header__nav-list {
-  @include clear-list;
+.header {
+  padding-top: 7px;
+}
+
+.header__wrap {
+  @include wrapper-mob;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__toggle {
+  position: relative;
+  width: 30px;
+  height: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+  z-index: 5;
+
+  &--open {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 30px;
+      height: 2px;
+      background-color: $main-color;
+      box-shadow: 0 9px 0 0 $main-color, 0 18px 0 0 $main-color;
+    }
+  }
+
+  &--close {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 9px;
+      right: -2px;
+      width: 35px;
+      height: 2px;
+      background-color: $basic-white;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.header__nav {
+  @include wrapper-mob;
+}
+
+.header__contacts {
+  display: none;
+}
+
+.header__toggle-back {
+  position: absolute;
+  top: 18px;
+  left: 12px;
+  width: 29px;
+  height: 29px;
+  border: none;
+  cursor: pointer;
+  background-color: $tech-color;
+  background-repeat: no-repeat;
+  background-image: url('../img/arrow-left.svg');
+  background-position: center;
+  z-index: 6;
+  display: none;
 }

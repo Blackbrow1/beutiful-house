@@ -8,35 +8,56 @@
     <link rel="stylesheet" href="css/normalize.min.css" />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
-  <body class="page__body">
-    <div class="header">
-      <a href="#" class="logo">
-        <picture>
-          <source media="(min-width: 768px)" srcset="img/logo-desktop.svg">
-          <img class="logo__img" src="img/logo-mobile.svg" width="66" height="37" alt="Логотип">
-        </picture>
-      </a>
+  <body class="page__body" id="page-body">
+    <header class="header">
+      <div class="header__wrap">
+        <a class="logo">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/logo-desktop.svg">
+            <img class="logo__img" src="img/logo-mobile.svg" width="66" height="38" alt="Логотип">
+          </picture>
+        </a>
 
-      <nav class="header__nav">
-        <ul class="header__nav-list">
-          <li class="header__nav-item"><a href="">Услуги</a></li>
-          <li class="header__nav-item"><a href="">Материалы</a></li>
-          <li class="header__nav-item"><a href="">О компании</a></li>
-          <li class="header__nav-item"><a href="">Контакты</a></li>
-        </ul>
-      </nav>
-
-      <div class="contacts">
-        <div class="contacts__socials">
-          <ul class="socials__social-list">
-            <li class="socials__social-item"><a href="#"></a></li>
-            <li class="socials__social-item"><a href="#"></a></li>
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="">Услуги</a></li>
+            <li class="nav__item nav__item-materials">
+              Материалы
+              <ul class="nav__materials">
+                <li class="nav__materials-item"><a href="#">Кровельные материалы</a></li>
+                <li class="nav__materials-item"><a href="#">Водосточные системы</a></li>
+                <li class="nav__materials-item"><a href="#">Фасадные материалы</a></li>
+                <li class="nav__materials-item"><a href="#">Элементы безопасности</a></li>
+                <li class="nav__materials-item"><a href="#">Вентиляция</a></li>
+                <li class="nav__materials-item"><a href="#">Дымоходные системы и вентканалы</a></li>
+                <li class="nav__materials-item"><a href="#">Мансардные и чердачные изделия</a></li>
+                <li class="nav__materials-item"><a href="#">Утеплитель. Кровельные плёнки и мембраны</a></li>
+              </ul>
+            </li>
+            <li class="nav__item"><a href="">О компании</a></li>
+            <li class="nav__item"><a href="">Контакты</a></li>
           </ul>
+        </nav>
+
+        <div class="header__contacts">
+          <div class="social">
+            <ul class="social__list">
+              <li class="social__item"><a href="#"></a></li>
+              <li class="socials__item"><a href="#"></a></li>
+            </ul>
+          </div>
+
+          <a class="header__contacts-phone" href="tel:89319941950">+7 (931) 994-19-50</a>
         </div>
 
-        <a href="tel:89319941950" class="contacts__phone">+7 (931) 994-19-50</a>
+        <button class="header__toggle header__toggle--open" type="button" aria-label="Открыть меню"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="header__toggle-back"><span class="visually-hidden">Перейти назад</span></button>
       </div>
-    </div>
+    </header>
+
+    <main class="main-content">
+
+    </main>
 
     <script src="js/script.min.js"></script>
   </body>
