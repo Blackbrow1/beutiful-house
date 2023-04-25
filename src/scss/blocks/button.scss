@@ -1,6 +1,5 @@
 .button {
   border: none;
-  font-family: 'Montserrat', Arial, sans-serif;
   background-color: $accent-color;
   color: $text-button;
   width: 100%;
@@ -9,7 +8,11 @@
   padding-top: 16px;
   padding-bottom: 16px;
   border-radius: 8px;
+  cursor: pointer;
+}
+
+.button__text {
+  font-family: $font-first;
   font-size: 15px;
   font-weight: 700;
-  cursor: pointer;
 }
