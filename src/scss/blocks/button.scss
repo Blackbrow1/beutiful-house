@@ -9,10 +9,15 @@
   padding-bottom: 16px;
   border-radius: 8px;
   cursor: pointer;
+  transition: background-color 0.6s ease;
 }
 
 .button__text {
   font-family: $font-first;
   font-size: 15px;
   font-weight: 700;
+}
+
+.button:hover {
+  background-color: $button-hover;
 }

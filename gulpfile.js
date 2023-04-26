@@ -52,6 +52,7 @@ function copyHtml() {
             message: error.message
         }))
     }))
+    .pipe(webpHtml())
     .pipe(dest('dist/nominifi/'));
 };
 

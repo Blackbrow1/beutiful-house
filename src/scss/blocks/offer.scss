@@ -1,4 +1,9 @@
 .offer {
+  @include wrapper-mob;
+}
+
+.offer__wrap {
+
   position: relative;
   padding-top: 28px;
   padding-bottom: 386px;
@@ -10,7 +15,7 @@
     height: 361px;
     left: -117px;
     top: -72px;
-    background-image: url('../img/rounds.svg');
+    background-image: url("../img/rounds.svg");
   }
 
   &::after {
@@ -20,13 +25,22 @@
     height: 299px;
     left: 0;
     bottom: 42px;
-    background-image: url('../img/main-image.png');
+    background-image: url("../img/main-image.png");
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/main-image@2x.png");
+      background-size: 290px 299px;
+    }
   }
 }
 
+// .offer__wrap {
+//   @include wrapper-mob;
+// }
+
 .offer__title {
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
   font-size: 26px;
   color: $main-color;
   font-weight: 700;
