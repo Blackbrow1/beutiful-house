@@ -1,0 +1,27 @@
+.social__list {
+  @include clear-list;
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social__link {
+  position: relative;
+  display: block;
+  width: 33px;
+  height: 33px;
+  border-radius: 50px;
+  background-color: $main-color;
+}
+
+.social__telegram {
+  position: absolute;
+  left: 6px;
+  top: 7px;
+}
+
+.social__whatsapp {
+  position: absolute;
+  left: 8px;
+  top: 7px;
+}

@@ -150,7 +150,7 @@ function scripts() {
 exports.scripts = scripts;
 
 function images() {
-    return src('src/img/*.{jpg,jpeg,png,gif,svg}')
+    return src('src/img/**/*.{jpg,jpeg,png,gif,svg}')
     .pipe(plumber({
         errorHandler: notify.onError(error => ({
             title: 'IMAGES',

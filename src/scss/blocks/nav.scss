@@ -13,6 +13,7 @@
 
 .nav__list {
   @include clear-list;
+  @include wrapper-mob;
 }
 
 .nav__item {
@@ -48,5 +49,11 @@
 
 .nav__item-materials {
   cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .nav__list {
+    @include wrapper-tablet;
+  }
 }
 

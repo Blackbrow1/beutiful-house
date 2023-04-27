@@ -1,5 +1,6 @@
 @mixin wrapper-mob() {
-  width: calc(100vw - 40px);
+  // width: calc(100vw - 40px);
+  width: 280px;
   padding: 0 20px;
   margin: 0 auto;
 }

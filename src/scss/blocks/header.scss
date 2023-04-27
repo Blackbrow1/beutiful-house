@@ -77,3 +77,34 @@
   z-index: 6;
   display: none;
 }
+
+@media (min-width: $tablet-width) {
+  .header__wrap {
+    @include wrapper-tablet;
+  }
+
+  .header__contacts {
+    display: block;
+  }
+
+  .header__toggle {
+    width: 40px;
+    height: 26px;
+
+    &--open {
+      &::before {
+        width: 40px;
+        box-shadow: 0 12px 0 0 $main-color, 0 24px 0 0 $main-color;
+      }
+    }
+
+    &--close {
+      &::before,
+      &::after {
+        top: 14px;
+        right: 0;
+        width: 40px;
+      }
+    }
+  }
+}

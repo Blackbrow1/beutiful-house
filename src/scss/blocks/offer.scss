@@ -23,8 +23,9 @@
     content: "";
     width: 290px;
     height: 299px;
-    left: 0;
+    left: 50%;
     bottom: 42px;
+    transform: translateX(-50%);
     background-image: url("../img/main-image.png");
     background-repeat: no-repeat;
 
