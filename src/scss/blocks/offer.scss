@@ -3,7 +3,6 @@
 }
 
 .offer__wrap {
-
   position: relative;
   padding-top: 28px;
   padding-bottom: 386px;
@@ -36,10 +35,6 @@
   }
 }
 
-// .offer__wrap {
-//   @include wrapper-mob;
-// }
-
 .offer__title {
   font-family: "Montserrat", Arial, sans-serif;
   font-size: 26px;
@@ -60,4 +55,47 @@
   margin-top: 0;
   margin-bottom: 29px;
   font-weight: 400;
+}
+
+@media (min-width: $tablet-width) {
+  .offer {
+    @include wrapper-tablet;
+  }
+
+  .offer__wrap {
+    padding-top: 65px;
+    padding-bottom: 755px;
+
+    &::before {
+      width: 929px;
+      height: 783px;
+      left: -274px;
+      top: -200px;
+      background-image: url("../img/rounds-tablet.svg");
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      width: 910px;
+      height: 910px;
+      bottom: -40px;
+      left: 60%;
+      background-image: url("../img/main-image-tablet.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/main-image-tablet@2x.png");
+        background-size: 910px 910px;
+      }
+    }
+  }
+
+  .offer__title {
+    font-size: 52px;
+    margin-bottom: 25px;
+  }
+
+  .offer__description {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
 }

@@ -30,7 +30,6 @@
 
 .nav__materials {
   @include clear-list;
-  @include wrapper-mob;
   position: absolute;
   left: 0;
   right: 0;
@@ -38,8 +37,9 @@
   bottom: 0;
   width: auto;
   background-color: $tech-color;
+  @include wrapper-mob;
   padding-top: 73px;
-  z-index: 3;
+  z-index: 10;
   display: none;
 }
 
@@ -52,6 +52,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .nav {
+    padding-top: 40px;
+  }
+
   .nav__list {
     @include wrapper-tablet;
   }
