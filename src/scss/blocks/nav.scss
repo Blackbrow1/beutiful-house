@@ -66,3 +66,43 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .nav {
+    position: static;
+    display: block;
+    background-color: inherit;
+    padding: 0;
+  }
+
+  .nav__item {
+    position: relative;
+    color: $main-color;
+    font-family: $font-first;
+    font-size: 16px;
+    margin-bottom: 0;
+
+    a {
+      color: $main-color;
+    }
+  }
+
+  .nav__item:hover {
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -10px;
+      height: 2px;
+      background-color: $main-color;
+    }
+  }
+
+  .nav__list {
+    display: flex;
+    justify-content: space-between;
+    width: 457px;
+
+  }
+}
+

@@ -6,13 +6,13 @@
 }
 
 @mixin wrapper-tablet() {
-  min-width: 708px;
+  width: 708px;
   padding: 0 30px;
   margin: 0 auto;
 }
 
 @mixin wrapper-desktop() {
   width: 1200px;
-  padding: 0 120px;
+  padding: 0 40px;
   margin: 0 auto;
 }

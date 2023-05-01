@@ -99,3 +99,32 @@
     margin-bottom: 40px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .offer {
+    @include wrapper-desktop;
+  }
+
+  .offer__wrap {
+    width: 692px;
+    padding-top: 88px;
+    padding-bottom: 193px;
+
+    &::before {
+      width: 1079px;
+      height: 852px;
+      background-image: url("../img/rounds-desktop.svg");
+      left: -374px;
+    }
+
+    &::after {
+      bottom: 0;
+      left: 150%;
+      top: -150px;
+    }
+  }
+
+  .offer__description {
+    width: 526px;
+  }
+}

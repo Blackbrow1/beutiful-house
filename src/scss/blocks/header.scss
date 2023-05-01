@@ -129,14 +129,37 @@
   }
 
   .header__contacts-wrap {
-    min-width: 335px;
+    width: 335px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 10;
   }
 
   .header__logo {
     position: relative;
     top: -7px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    padding-bottom: 0;
+  }
+
+  .header__wrap {
+    @include wrapper-desktop;
+  }
+
+  .header__toggle {
+    display: none;
+  }
+
+  .header__toggle-back {
+    display: none;
+  }
+
+  .header__contacts-wrap {
+    width: 250px;
   }
 }
