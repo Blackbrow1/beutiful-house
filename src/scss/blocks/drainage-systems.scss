@@ -1,0 +1,20 @@
+.drainage-systems {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.drainage-systems__wrap {
+  @include wrapper-mob;
+}
+
+.drainage-systems__list {
+  @include clear-list;
+}
+
+.drainage-systems__title {
+  margin-bottom: 30px;
+}
+
+.drainage-systems__accent {
+  color: $accent-color;
+}

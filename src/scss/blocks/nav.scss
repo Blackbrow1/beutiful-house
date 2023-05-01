@@ -7,7 +7,7 @@
   width: auto;
   background-color: $tech-color;
   padding-top: 24px;
-  z-index: 2;
+  z-index: 3;
   display: none;
 }
 
@@ -58,6 +58,11 @@
 
   .nav__list {
     @include wrapper-tablet;
+  }
+
+  .nav__materials {
+    @include wrapper-tablet;
+    padding-top: 85px;
   }
 }
 

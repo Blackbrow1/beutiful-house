@@ -160,7 +160,7 @@ function images() {
     .pipe(newer('dist/'))
     .pipe(webp())
     .pipe(dest('dist/img/'))
-    .pipe(src('src/img/*.{jpg,jpeg,png,gif,svg}'))
+    .pipe(src('src/img/**/*.{jpg,jpeg,png,gif,svg}'))
     .pipe(newer('dist/'))
     .pipe(imagemin({
         verbose: true

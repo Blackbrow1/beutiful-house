@@ -1,0 +1,17 @@
+.roof-coverings {
+  background-color: $background-color;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.roof-coverings__wrap {
+  @include wrapper-mob;
+}
+
+.roof-coverings__list {
+  @include clear-list;
+}
+
+.roof-coverings__title {
+  margin-bottom: 30px;
+}
