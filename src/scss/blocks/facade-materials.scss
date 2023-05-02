@@ -1,0 +1,60 @@
+.facade-materials {
+  padding-bottom: 50px;
+}
+
+.facade-materials__wrap {
+  @include wrapper-mob;
+}
+
+.facade-materials__list {
+  @include clear-list;
+}
+
+.facade-materials__title {
+  margin-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .facade-materials {
+    padding-bottom: 80px;
+  }
+
+  .facade-materials__wrap {
+    @include wrapper-tablet;
+  }
+
+  .facade-materials__title {
+    margin-bottom: 40px;
+  }
+
+  .facade-materials__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .facade-materials__list--card {
+    width: 700px;
+    margin-bottom: 50px;
+
+    img {
+      width: 700px;
+      height: 400px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .facade-materials {
+    padding-bottom: 100px;
+  }
+
+  .facade-materials__wrap {
+    @include wrapper-desktop;
+  }
+
+  .facade-materials__title {
+    margin-bottom: 52px;
+  }
+}
