@@ -18,3 +18,38 @@
 .drainage-systems__accent {
   color: $accent-color;
 }
+
+@media (min-width: $tablet-width) {
+  .drainage-systems {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .drainage-systems__wrap {
+    @include wrapper-tablet;
+  }
+
+  .drainage-systems__title {
+    margin-bottom: 40px;
+  }
+
+  .drainage-systems__list--card {
+    width: 700px;
+    margin-bottom: 50px;
+
+    img {
+      width: 700px;
+      height: 400px;
+    }
+
+    p {
+      margin-bottom: 25px;
+    }
+  }
+
+  .drainage-systems__list--card:nth-child(2) {
+    img {
+      background-position: center;
+    }
+  }
+}

@@ -6,3 +6,9 @@
   color: $main-color;
   margin-top: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .h2 {
+    font-size: 40px;
+  }
+}

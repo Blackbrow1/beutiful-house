@@ -16,7 +16,7 @@
   border: none;
   cursor: pointer;
   background-color: inherit;
-  z-index: 5;
+  z-index: 3;
 
   &--open {
     &::before {
@@ -133,7 +133,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 10;
   }
 
   .header__logo {

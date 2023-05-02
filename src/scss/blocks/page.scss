@@ -15,3 +15,9 @@
 
   min-height: 100%;
 }
+
+@media (min-width: $tablet-width) {
+  .page__body {
+    font-size: 16px;
+  }
+}

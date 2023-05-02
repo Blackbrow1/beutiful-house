@@ -1,0 +1,19 @@
+.brands {
+  @include clear-list;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.brands__item {
+  padding: 0 5px;
+  background-color: $main-color;
+  color: $basic-white;
+  border-radius: 5px;
+}
+
+@media (min-width: $tablet-width) {
+  .brands {
+    gap: 20px;
+  }
+}
