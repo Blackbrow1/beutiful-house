@@ -40,16 +40,38 @@
     img {
       width: 700px;
       height: 400px;
+      margin-bottom: 15px;
     }
 
     p {
       margin-bottom: 25px;
     }
   }
+}
 
-  .drainage-systems__list--card:nth-child(2) {
+@media (min-width: $desktop-width) {
+  .drainage-systems {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .drainage-systems__wrap {
+    @include wrapper-desktop;
+  }
+
+  .drainage-systems__title {
+    margin-bottom: 52px;
+  }
+
+  .drainage-systems__list--card {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+
     img {
-      background-position: center;
+      width: 584px;
+      height: 339px;
+      margin-bottom: 0;
     }
   }
 }
