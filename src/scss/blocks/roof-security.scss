@@ -1,0 +1,119 @@
+.roof-security {
+  padding-bottom: 50px;
+}
+
+.roof-security__wrap {
+  @include wrapper-mob;
+}
+
+.roof-security__title {
+  margin-bottom: 30px;
+}
+
+.roof-security__list {
+  @include clear-list;
+}
+
+.roof-security__content {
+  p {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+}
+
+.roof-security__item {
+  margin-bottom: 30px;
+  img {
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+}
+
+.roof-security__description {
+  p {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  ol {
+    padding: 0;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .roof-security {
+    padding-bottom: 80px;
+  }
+
+  .roof-security__wrap {
+    @include wrapper-tablet;
+  }
+
+  .roof-security__title {
+    margin-bottom: 40px;
+  }
+
+  .roof-security__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+
+    img {
+      margin-bottom: 0;
+      width: 335px;
+      height: 204px;
+    }
+  }
+
+  .roof-security__description {
+    grid-column: 1 / -1;
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .roof-security__content {
+    width: 335px;
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .roof-security {
+    padding-bottom: 100px;
+  }
+
+  .roof-security__wrap {
+    @include wrapper-desktop;
+  }
+
+  .roof-security__title {
+    margin-bottom: 52px;
+  }
+
+  .roof-security__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 52px;
+
+    img {
+      width: 483px;
+      height: 275px;
+    }
+  }
+
+  .roof-security__description {
+    grid-column: 3 / 4;
+  }
+
+  .roof-security__content {
+    width: 280px;
+  }
+}
