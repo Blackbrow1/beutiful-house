@@ -22,7 +22,7 @@
     border-radius: 8px;
   }
 
-  .h3 {
+  .ventilation__title {
     margin-bottom: 15px;
   }
 
@@ -60,5 +60,39 @@
 
   .ventilation__description {
     margin-bottom: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .ventilation {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .ventilation__wrap {
+    @include wrapper-desktop;
+  }
+
+  .ventilation__list--card {
+    flex-direction: row;
+    justify-content: space-between;
+
+    img {
+      width: 584px;
+      height: 377px;
+    }
+
+    .ventilation__title {
+      margin-bottom: 25px;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+  }
+
+  .ventilation__description {
+    width: 590px;
   }
 }
