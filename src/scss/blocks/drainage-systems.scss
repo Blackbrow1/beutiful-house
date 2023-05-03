@@ -19,6 +19,14 @@
   color: $accent-color;
 }
 
+.drainage-systems__list--card {
+  margin-bottom: 30px;
+}
+
+.drainage-systems__list--card:last-child {
+  margin-bottom: 0;
+}
+
 @media (min-width: $tablet-width) {
   .drainage-systems {
     padding-top: 80px;
