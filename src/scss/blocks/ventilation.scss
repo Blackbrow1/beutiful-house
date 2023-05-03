@@ -19,14 +19,46 @@
 
   img {
     margin-bottom: 0;
+    border-radius: 8px;
   }
 
   .h3 {
     margin-bottom: 15px;
   }
 
-  .card__description {
-    order: -1;
-    margin-bottom: 30px;
+  p {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+}
+
+.ventilation__description {
+  order: -1;
+  margin-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .ventilation {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .ventilation__wrap {
+    @include wrapper-tablet;
+  }
+
+  .ventilation__list--card {
+    img {
+      width: 708px;
+      height: 419px;
+    }
+
+    p {
+      margin-bottom: 26px;
+    }
+  }
+
+  .ventilation__description {
+    margin-bottom: 40px;
   }
 }
