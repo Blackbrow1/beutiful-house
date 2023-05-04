@@ -1,0 +1,46 @@
+.chimney-systems {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.chimney-systems__wrap {
+  @include wrapper-mob;
+}
+
+.chimney-systems__title {
+  margin-bottom: 15px;
+}
+
+.chimney-systems__description {
+  p {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  p:last-child {
+    margin-bottom: 30px;
+  }
+}
+
+.chimney-systems__list {
+  @include clear-list;
+}
+
+.chimney-systems__header {
+  p {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+}
+
+.chimney-systems__item {
+  img {
+    margin-bottom: 15px;
+    border-radius: 8px;
+  }
+}
+
+.chimney-systems__footer {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
