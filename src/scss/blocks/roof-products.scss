@@ -1,0 +1,17 @@
+.roof-products {
+  background-color: $background-color;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.roof-products__wrap {
+  @include wrapper-mob;
+}
+
+.roof-products__title {
+  margin-bottom: 30px;
+}
+
+.roof-products__list {
+  @include clear-list;
+}
