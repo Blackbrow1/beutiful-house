@@ -18,7 +18,7 @@ menuButton.addEventListener ('click', function (evt) {
     menuButton.classList.add('header__toggle--close');
     nav.style.display = 'block';
     navItemMaterials.addEventListener('click',  onNavItemMaterials);
-    document.body.style.overflow = "hidden";
+    //document.body.style.overflow = "hidden";
   } else {
     menuButton.classList.remove('header__toggle--close');
     menuButton.classList.add('header__toggle--open');
@@ -26,7 +26,7 @@ menuButton.addEventListener ('click', function (evt) {
     headerToggleBack.style.display = 'none';
     navMaterials.style.display = 'none';
     navItemMaterials.removeEventListener('click',  onNavItemMaterials);
-    document.body.style.overflow = "visible";
+    //document.body.style.overflow = "visible";
   }
 });
 
