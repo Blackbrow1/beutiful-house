@@ -140,3 +140,52 @@
     padding-left: 174px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .about {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .about__wrap {
+    @include wrapper-desktop;
+  }
+
+  .about__title {
+    margin-bottom: 52px;
+  }
+
+  .about__description {
+    margin-bottom: 81px;
+  }
+
+  .about__main-content {
+    padding-bottom: 0;
+    width: 585px;
+
+    &::after {
+      width: 798px;
+      height: 549px;
+      background: url("../img/about/about-desktop.png") no-repeat 0 0;
+      left: 464px;
+      bottom: 257px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/about/about-desktop@2x.png");
+        background-size: 798px 549px;
+      }
+    }
+  }
+
+  .about__secondary {
+    padding-left: 0;
+    width: 585px;
+    margin-bottom: 49px;
+  }
+
+  .about__wrap {
+    display: flex;
+    align-items: flex-end;
+    column-gap: 33px;
+  }
+}

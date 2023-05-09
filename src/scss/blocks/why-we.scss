@@ -1,0 +1,218 @@
+.why-we {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.why-we__wrap {
+  @include wrapper-mob;
+}
+
+.why-we__title {
+  margin-bottom: 30px;
+}
+
+.why-we__item {
+  position: relative;
+  margin-bottom: 30px;
+  padding-top: 85px;
+
+  &::before {
+    content: "";
+    width: 70px;
+    height: 70px;
+    background: $accent-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+  }
+}
+
+.why-we__item--chain {
+  &::after {
+    content: "";
+    width: 33px;
+    height: 33px;
+    background-image: url("../img/why-we/chain.svg");
+    position: absolute;
+    top: 18px;
+    left: 18px;
+  }
+}
+
+.why-we__item--pencil {
+  &::after {
+    content: "";
+    width: 33px;
+    height: 33px;
+    background-image: url("../img/why-we/pencil.svg");
+    position: absolute;
+    top: 18px;
+    left: 18px;
+  }
+}
+
+.why-we__item--rocket {
+  &::after {
+    content: "";
+    width: 33px;
+    height: 33px;
+    background-image: url("../img/why-we/rocket.svg");
+    position: absolute;
+    top: 18px;
+    left: 18px;
+  }
+}
+
+.why-we__item--pinion {
+  &::after {
+    content: "";
+    width: 33px;
+    height: 33px;
+    background-image: url("../img/why-we/pinion.svg");
+    position: absolute;
+    top: 18px;
+    left: 18px;
+  }
+}
+
+.why-we__item--icon {
+  &::after {
+    content: "";
+    width: 33px;
+    height: 33px;
+    background-image: url("../img/why-we/icon.svg");
+    position: absolute;
+    top: 18px;
+    left: 18px;
+  }
+}
+
+.why-we__item--heart {
+  &::after {
+    content: "";
+    width: 33px;
+    height: 33px;
+    background-image: url("../img/why-we/heart.svg");
+    position: absolute;
+    top: 20px;
+    left: 18px;
+  }
+}
+
+.why-we__list {
+  @include clear-list;
+}
+
+.why-we__item-title {
+  margin-bottom: 5px;
+}
+
+.why-we__item-description {
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .why-we {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .why-we__wrap {
+    @include wrapper-tablet;
+  }
+
+  .why-we__title {
+    margin-bottom: 40px;
+  }
+
+  .why-we__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .why-we__item {
+    margin-bottom: 47px;
+    padding-top: 122px;
+    width: 335px;
+
+    &::before {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .why-we__item--chain,
+  .why-we__item--pencil,
+  .why-we__item--rocket,
+  .why-we__item--pinion,
+  .why-we__item--icon,
+  .why-we__item--heart {
+    &::after {
+      width: 46px;
+      height: 46px;
+      top: 27px;
+      left: 27px;
+    }
+  }
+
+  .why-we__item--chain {
+    &::after {
+      background-image: url("../img/why-we/chain-tablet.svg");
+    }
+  }
+
+  .why-we__item--pencil {
+    &::after {
+      background-image: url("../img/why-we/pencil-tablet.svg");
+    }
+  }
+
+  .why-we__item--rocket {
+    &::after {
+      background-image: url("../img/why-we/rocket-tablet.svg");
+    }
+  }
+
+  .why-we__item--pinion {
+    &::after {
+      background-image: url("../img/why-we/pinion-tablet.svg");
+    }
+  }
+
+  .why-we__item--icon {
+    &::after {
+      background-image: url("../img/why-we/icon-tablet.svg");
+    }
+  }
+
+  .why-we__item--heart {
+    &::after {
+      background-image: url("../img/why-we/heart-tablet.svg");
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .why-we {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .why-we__wrap {
+    @include wrapper-desktop;
+  }
+
+  .why-we__title {
+    margin-bottom: 52px;
+  }
+
+  .why-we__item {
+    margin-bottom: 52px;
+  }
+
+  .why-we__item-title {
+    margin-bottom: 10px;
+  }
+}
