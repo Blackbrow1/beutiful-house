@@ -1,0 +1,142 @@
+.about {
+  background-color: $background-color;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.about__wrap {
+  @include wrapper-mob;
+}
+
+.about__title {
+  margin-bottom: 15px;
+}
+
+.about__description {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+.about__brands-title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.about__brands-list {
+  @include clear-list;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 386px;
+  row-gap: 28px;
+  column-gap: 38px;
+}
+
+.about__brands-item {
+  position: relative;
+  padding-left: 25px;
+
+  &::after {
+    content: "";
+    width: 20px;
+    height: 15px;
+    background: url("../img/check.svg") no-repeat 0 0;
+    position: absolute;
+    left: 0;
+    top: 2px;
+  }
+}
+
+.about__secondary-content {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 15px;
+}
+
+.about__main-content {
+  position: relative;
+  padding-bottom: 340px;
+
+  &::after {
+    content: "";
+    width: 280px;
+    height: 280px;
+    background: url("../img/about/about.png") no-repeat 0 0;
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/about/about@2x.png");
+      background-size: 280px 280px;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .about {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .about__wrap {
+    @include wrapper-tablet;
+  }
+
+  .about__title {
+    margin-bottom: 25px;
+  }
+
+  .about__description {
+    margin-bottom: 33px;
+    font-size: $text-big-tablet;
+  }
+
+  .about__brands-title {
+    margin-bottom: 22px;
+    font-size: $text-big-tablet;
+  }
+
+  .about__brands-list {
+    height: 394px;
+    width: 371px;
+    row-gap: 20px;
+    column-gap: 62px;
+  }
+
+  .about__brands-item {
+    padding-left: 27px;
+
+    &::after {
+      top: 4px;
+    }
+  }
+
+  .about__secondary-content {
+    font-size: $text-big-tablet;
+  }
+
+  .about__main-content {
+    padding-bottom: 357px;
+
+    &::after {
+      width: 695px;
+      height: 479px;
+      background: url("../img/about/about-tablet.png") no-repeat 0 0;
+      left: 30px;
+      bottom: 0;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/about/about-tablet@2x.png");
+        background-size: 695px 479px;
+      }
+    }
+  }
+
+  .about__secondary {
+    padding-left: 174px;
+  }
+}
