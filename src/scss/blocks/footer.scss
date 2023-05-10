@@ -1,0 +1,52 @@
+.footer {
+  background-color: $tech-color;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  font-family: $font-first;
+}
+
+.footer__nav-list {
+  @include clear-list;
+}
+
+.footer__nav-item {
+  a {
+    color: $basic-white;
+    text-decoration: none;
+    font-size: 14px;
+  }
+}
+
+.footer__phone {
+  color: $basic-white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.footer__wrap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  @include wrapper-mob;
+  height: 230px;
+}
+
+.footer__logo {
+  margin-bottom: 27px;
+}
+
+.footer__nav-item {
+  margin-bottom: 23px;
+}
+
+.footer__nav-item:nth-child(4) {
+  margin-bottom: 0;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  row-gap: 24px;
+  padding-top: 16px;
+}
