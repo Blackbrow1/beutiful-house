@@ -26,7 +26,7 @@
 
         <nav class="header__nav nav">
           <ul class="nav__list">
-            <li class="nav__item"><a href="#">Услуги</a></li>
+            <li class="nav__item"><a href="#offer">Начало</a></li>
             <li class="nav__item nav__item-materials">
               Материалы
               <ul class="nav__materials">
@@ -40,8 +40,8 @@
                 <li class="nav__materials-item"><a href="#">Утеплитель. Кровельные плёнки и мембраны</a></li>
               </ul>
             </li>
-            <li class="nav__item"><a href="#">О компании</a></li>
-            <li class="nav__item"><a href="#">Контакты</a></li>
+            <li class="nav__item"><a href="#about-us">О компании</a></li>
+            <li class="nav__item"><a href="#contacts">Контакты</a></li>
           </ul>
         </nav>
 
@@ -72,7 +72,7 @@
     </header>
 
     <main>
-      <section class="offer">
+      <section class="offer" id="offer">
         <div class="offer__wrap">
           <h1 class="offer__title">Материалы<br> для строительства <span class="accent-color">загородного дома</span></h1>
           <p class="offer__description">
@@ -339,7 +339,7 @@
                 <source type="image/webp" srcset="img/chimney-systems/ceramic-chimney.webp 1x, img/chimney-systems/ceramic-chimney@2x.webp 2x">
                 <source media="(min-width: 1280px)" srcset="img/chimney-systems/ceramic-system-desktop.jpg 1x, img/chimney-systems/ceramic-system-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/chimney-systems/ceramic-chimney-tablet.jpg 1x, img/chimney-systems/ceramic-chimney-tablet@2x.jpg 2x">
-                <img src="img/chimney-systems/ceramic-chimney.jpg" srcset="img/chimney-systems/ceramic-chimney@2x.jpg" width="280" height="173" alt="Керамические дымоходы">
+                <img class="chimney-systems__img" src="img/chimney-systems/ceramic-chimney.jpg" srcset="img/chimney-systems/ceramic-chimney@2x.jpg" width="280" height="173" alt="Керамические дымоходы">
               </picture>
 
               <p class="chimney-systems__footer">Дымоходы из керамики подходят для различных типов отопительных систем, могут эффективно работать под влиянием высоких температур.</p>
@@ -358,7 +358,7 @@
                 <source type="image/webp" srcset="img/chimney-systems/metal-chimney.webp 1x, img/chimney-systems/metal-chimney@2x.webp 2x">
                 <source media="(min-width: 1280px)" srcset="img/chimney-systems/metal-chimney-desktop.jpg 1x, img/chimney-systems/metal-chimney-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/chimney-systems/metal-chimneyy-tablet.jpg 1x, img/chimney-systems/metal-chimney-tablet@2x.jpg 2x">
-                <img src="img/chimney-systems/metal-chimney.jpg" srcset="img/chimney-systems/metal-chimney@2x.jpg" width="280" height="173" alt="Керамические дымоходы">
+                <img class="chimney-systems__img" src="img/chimney-systems/metal-chimney.jpg" srcset="img/chimney-systems/metal-chimney@2x.jpg" width="280" height="173" alt="Керамические дымоходы">
               </picture>
 
               <p class="chimney-systems__footer">Высококачественная оцинкованная сталь 0,6×1000 DX51D+Z200MAC
@@ -377,12 +377,13 @@
                 <source type="image/webp" srcset="img/chimney-systems/vent-chanel.webp 1x, img/chimney-systems/vent-chanel@2x.webp 2x">
                 <source media="(min-width: 1280px)" srcset="img/chimney-systems/vent-chanel-desktop.jpg 1x, img/chimney-systems/vent-chanel-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/chimney-systems/vent-chanel-tablet.jpg 1x, img/chimney-systems/vent-chanel-tablet@2x.jpg 2x">
-                <img src="img/chimney-systems/vent-chanel.jpg" srcset="img/chimney-systems/vent-chanel@2x.jpg" width="280" height="173" alt="Керамические дымоходы">
+                <img class="chimney-systems__img" src="img/chimney-systems/vent-chanel.jpg" srcset="img/chimney-systems/vent-chanel@2x.jpg" width="280" height="173" alt="Керамические дымоходы">
               </picture>
             </li>
           </ul>
 
           <button class="button" type="button"><span class="button__text">Подобрать материалы</span></button>
+
         </div>
       </section>
 
@@ -496,7 +497,7 @@
         </div>
       </section>
 
-      <section class="about">
+      <section class="about" id="about-us">
         <div class="about__wrap">
           <div class="about__main-content">
             <h2 class="h2 about__title">Немного <span class="accent-color">о нас</span></h2>
@@ -577,7 +578,7 @@
         </div>
       </section>
 
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <div class="contacts__wrap">
           <h2 class="h2 contacts__title">Контакты</h2>
 
@@ -597,18 +598,20 @@
     <footer class="footer">
       <div class="footer__wrap">
         <div class="footer__logo">
-          <picture>
-            <img src="img/logo-footer-mobile.svg" width="70" height="42" alt="Лого в футере">
-            <source media="(min-width: 768px)" srcset="img/logo-footer-tablet.svg">
-          </picture>
+          <a href="index.html">
+            <picture>
+              <img src="img/logo-footer-mobile.svg" width="70" height="42" alt="Лого в футере">
+              <source media="(min-width: 768px)" srcset="img/logo-footer-tablet.svg">
+            </picture>
+          </a>
         </div>
 
         <nav class="footer__nav">
           <ul class="footer__nav-list">
-            <li class="footer__nav-item"><a href="#">Услуги</a></li>
-            <li class="footer__nav-item"><a href="#">О компании</a></li>
+            <li class="footer__nav-item"><a href="#offer">Начало</a></li>
+            <li class="footer__nav-item"><a href="#about-us">О компании</a></li>
             <li class="footer__nav-item"><a href="#">Материалы</a></li>
-            <li class="footer__nav-item"><a href="#">Контакты</a></li>
+            <li class="footer__nav-item"><a href="#contacts">Контакты</a></li>
           </ul>
         </nav>
 
@@ -632,6 +635,18 @@
         </div>
       </div>
     </footer>
+
+    <div class="popup">
+      <h3 class="h3">Заказать обратный звонок</h3>
+      <p class="popup__text">Узнать об актуальных ценах и наличии товаров можно отправив форму записи</p>
+
+      <form action="" method="post">
+        <input type="text" name="name" id="name" placeholder="Ваше имя">
+        <input type="tel" name="tel" id="tel" placeholder="Номер телефона">
+
+        <input class="button" type="submit" value="Отправить">
+      </form>
+    </div>
 
     <script src="js/script.min.js"></script>
   </body>

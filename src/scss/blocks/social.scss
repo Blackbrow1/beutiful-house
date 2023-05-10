@@ -29,3 +29,9 @@
 .social__link--footer {
   background-color: $basic-white;
 }
+
+@media (min-width: $desktop-width) {
+  .social {
+    order: -1;
+  }
+}
