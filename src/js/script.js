@@ -6,6 +6,10 @@ const navMaterials = document.querySelector('.nav__materials');
 
 const headerToggleBack = document.querySelector('.header__toggle-back');
 
+const buttons = document.querySelectorAll('.button');
+const popup = document.querySelector('.popup');
+const popupQuit = document.querySelector('.popup__quit');
+
 function onNavItemMaterials() {
   navMaterials.style.display = 'block';
   headerToggleBack.style.display = 'block';
@@ -35,4 +39,12 @@ headerToggleBack.addEventListener('click', () => {
   headerToggleBack.style.display = 'none';
 });
 
+buttons.forEach(function(btn) {
+  btn.addEventListener('click', function(e) {
+    popup.classList.add('popup__show');
+  })
+})
 
+popupQuit.addEventListener('click', () => {
+  popup.classList.remove('popup__show');
+})

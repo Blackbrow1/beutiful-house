@@ -14,7 +14,7 @@
     <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font">
     <link rel="preload" href="fonts/Montserrat-Bold.woff" as="font">
   </head>
-  <body class="page__body" id="page-body">
+  <body class="page__body page__body--popup" id="page-body">
     <header class="header">
       <div class="header__wrap">
         <a class="header__logo logo">
@@ -636,7 +636,7 @@
     </footer>
 
     <div class="popup">
-      <h3 class="h3">Заказать обратный звонок</h3>
+      <h3 class="h3 popup__title">Заказать обратный звонок</h3>
       <p class="popup__text">Узнать об актуальных ценах и наличии товаров можно отправив форму записи</p>
 
       <form action="" method="post">
@@ -644,6 +644,8 @@
         <input class="popup__tel" type="tel" name="tel" id="tel" placeholder="Номер телефона">
 
         <input class="popup__button" type="submit" value="Отправить">
+
+        <button class="popup__quit popup__quit--close" type="button"><span class="visually-hidden">Закрыть</span></button>
       </form>
     </div>
 
