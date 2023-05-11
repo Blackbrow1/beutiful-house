@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="en">
+<html class="page" lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -124,13 +124,13 @@
               <p>Материал на основе стеклохолста, модифицированного битума и посыпки из каменного гранулята</p>
             </li>
 
-            <li class="card card__big">
+            <li class="card card--big">
               <img src="img/roof-coverings/sofits.jpg" width="280" height="173" alt="Софиты">
               <h3 class="h3">Софиты</h3>
               <p>Панели из пластика или металла, для подшивки кровельных свесов. Улучшают вентиляцию подкровельного пространства, защищают фасад от ветра и дождя</p>
             </li>
 
-            <li class="card card__big">
+            <li class="card card--big">
               <img src="img/roof-coverings/rebate-roofing.jpg" width="280" height="173" alt="Фальцевая кровля">
               <h3 class="h3">Фальцевая кровля</h3>
               <p>Кровельный материал,  представляющий собой профилированные панели из тонколистовой оцинкованной стали с полимерным покрытием</p>
@@ -493,7 +493,6 @@
           </ul>
 
           <button class="button" type="button"><span class="button__text">Подобрать материалы</span></button>
-
         </div>
       </section>
 
@@ -590,7 +589,7 @@
           </div>
         </div>
         <div class="contacts__map">
-          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A62f7282978df8bece918b7c3427fb5e57b631fc6e7b679d0933cc6afeb9d3136&amp;source=constructor" width="100%" height="365" frameborder="0"></iframe>
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A62f7282978df8bece918b7c3427fb5e57b631fc6e7b679d0933cc6afeb9d3136&amp;source=constructor"></iframe>
         </div>
       </section>
     </main>
@@ -600,8 +599,8 @@
         <div class="footer__logo">
           <a href="index.html">
             <picture>
-              <img src="img/logo-footer-mobile.svg" width="70" height="42" alt="Лого в футере">
               <source media="(min-width: 768px)" srcset="img/logo-footer-tablet.svg">
+              <img src="img/logo-footer-mobile.svg" width="70" height="42" alt="Лого в футере">
             </picture>
           </a>
         </div>
@@ -641,10 +640,10 @@
       <p class="popup__text">Узнать об актуальных ценах и наличии товаров можно отправив форму записи</p>
 
       <form action="" method="post">
-        <input type="text" name="name" id="name" placeholder="Ваше имя">
-        <input type="tel" name="tel" id="tel" placeholder="Номер телефона">
+        <input class="popup__name" type="text" name="name" id="name" placeholder="Ваше имя">
+        <input class="popup__tel" type="tel" name="tel" id="tel" placeholder="Номер телефона">
 
-        <input class="button" type="submit" value="Отправить">
+        <input class="popup__button" type="submit" value="Отправить">
       </form>
     </div>
 
