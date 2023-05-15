@@ -40,8 +40,6 @@
   }
 }
 
-
-
 .popup--show {
   display: block;
 }
@@ -140,6 +138,7 @@
       height: 339px;
       background-image: url("../img/rounds-popup-tablet.svg");
       background-repeat: no-repeat;
+      z-index: -1;
     }
   }
 
