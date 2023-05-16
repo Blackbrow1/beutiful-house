@@ -38,7 +38,7 @@
   width: auto;
   background-color: $tech-color;
   @include wrapper-mob;
-  padding-top: 73px;
+  padding-top: 19px;
   z-index: 10;
   display: none;
 }
@@ -47,8 +47,25 @@
   margin-bottom: 16px;
 }
 
+.nav__materials-item--back {
+  margin-bottom: 25px;
+}
+
 .nav__item-materials {
   cursor: pointer;
+}
+
+.nav__button-back {
+  position: relative;
+  left: -6px;
+  width: 29px;
+  height: 29px;
+  border: none;
+  cursor: pointer;
+  background-color: $tech-color;
+  background-repeat: no-repeat;
+  background-image: url('../img/arrow-left.svg');
+  background-position: center;
 }
 
 @media (min-width: $tablet-width) {
