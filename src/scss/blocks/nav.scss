@@ -8,6 +8,9 @@
   background-color: $tech-color;
   padding-top: 24px;
   z-index: 3;
+}
+
+.nav--closed {
   display: none;
 }
 
@@ -40,7 +43,10 @@
   @include wrapper-mob;
   padding-top: 19px;
   z-index: 10;
-  display: none;
+
+  &--closed {
+    display: none;
+  }
 }
 
 .nav__materials-item {
@@ -79,7 +85,7 @@
 
   .nav__materials {
     @include wrapper-tablet;
-    padding-top: 85px;
+    padding-top: 37px;
   }
 }
 
@@ -89,6 +95,10 @@
     display: block;
     background-color: inherit;
     padding: 0;
+  }
+
+  .nav--closed {
+    display: block;
   }
 
   .nav__item {

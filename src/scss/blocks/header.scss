@@ -11,9 +11,9 @@
 
 .header__toggle {
   position: relative;
-  top: 5px;
+  top: 2px;
   width: 30px;
-  height: 30px;
+  height: 20px;
   border: none;
   cursor: pointer;
   background-color: inherit;
@@ -37,7 +37,7 @@
     &::after {
       content: "";
       position: absolute;
-      top: 14px;
+      top: 11px;
       right: -2px;
       width: 35px;
       height: 2px;
@@ -80,6 +80,7 @@
   .header__toggle {
     width: 40px;
     height: 26px;
+    top: 0;
 
     &--open {
       &::before {

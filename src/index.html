@@ -34,12 +34,12 @@
           </picture>
         </a>
 
-        <nav class="header__nav nav">
+        <nav class="header__nav nav nav--closed">
           <ul class="nav__list">
             <li class="nav__item"><a href="#header">Начало</a></li>
             <li class="nav__item nav__item-materials">
               Материалы
-              <ul class="nav__materials">
+              <ul class="nav__materials nav__materials--closed">
                 <li class="nav__materials-item nav__materials-item--back">
                   <button class="nav__button-back" type="button" aria-label="Назад"><span class="visually-hidden">Назад</span></button>
                 </li>
@@ -47,11 +47,11 @@
                 <li class="nav__materials-item"><a href="#roof-coverings">Кровельные материалы</a></li>
                 <li class="nav__materials-item"><a href="#drainage-systems">Водосточные системы</a></li>
                 <li class="nav__materials-item"><a href="#facade-materials">Фасадные материалы</a></li>
-                <li class="nav__materials-item"><a href="#">Элементы безопасности</a></li>
-                <li class="nav__materials-item"><a href="#">Вентиляция</a></li>
-                <li class="nav__materials-item"><a href="#">Дымоходные системы и вентканалы</a></li>
-                <li class="nav__materials-item"><a href="#">Мансардные и чердачные изделия</a></li>
-                <li class="nav__materials-item"><a href="#">Утеплитель. Кровельные плёнки и мембраны</a></li>
+                <li class="nav__materials-item"><a href="#roof-security">Элементы безопасности</a></li>
+                <li class="nav__materials-item"><a href="#ventilation">Вентиляция</a></li>
+                <li class="nav__materials-item"><a href="#chimney-systems">Дымоходные системы и вентканалы</a></li>
+                <li class="nav__materials-item"><a href="#roof-products">Мансардные и чердачные изделия</a></li>
+                <li class="nav__materials-item"><a href="#insulation">Утеплитель. Кровельные плёнки и мембраны</a></li>
               </ul>
             </li>
             <li class="nav__item"><a href="#about-us">О компании</a></li>
@@ -80,7 +80,7 @@
           </div>
 
           <button class="header__toggle header__toggle--open" type="button" aria-label="Открыть меню"><span class="visually-hidden">Открыть меню</span></button>
-          <button class="header__toggle-back" type="button"><span class="visually-hidden">Перейти назад</span></button>
+          <!-- <button class="header__toggle-back header__toggle-back-closed" type="button"><span class="visually-hidden">Перейти назад</span></button> -->
         </div>
       </div>
     </header>
@@ -393,7 +393,7 @@
         </div>
       </section>
 
-      <section class="roof-security">
+      <section class="roof-security" id="roof-security">
         <div class="roof-security__wrap">
           <h2 class="h2 roof-security__title">Элементы <span class="accent-color">безопасности кровли</span></h2>
 
@@ -453,7 +453,7 @@
         </div>
       </section>
 
-      <section class="ventilation">
+      <section class="ventilation" id="ventilation">
         <div class="ventilation__wrap">
           <ul class="ventilation__list">
             <li class="ventilation__list--card">
@@ -483,7 +483,7 @@
         </div>
       </section>
 
-      <section class="chimney-systems">
+      <section class="chimney-systems" id="chimney-systems">
         <div class="chimney-systems__wrap">
           <h2 class="h2 chimney-systems__title">Дымоходные <span class="accent-color">системы<br> и вентканалы</span></h2>
 
@@ -558,7 +558,7 @@
         </div>
       </section>
 
-      <section class="roof-products">
+      <section class="roof-products" id="roof-products">
         <div class="roof-products__wrap">
           <h2 class="h2 roof-products__title">Мансардные и чердачные <span class="accent-color">изделия</span></h2>
 
@@ -609,7 +609,7 @@
         </div>
       </section>
 
-      <section class="insulation">
+      <section class="insulation" id="insulation">
         <div class="insulation__wrap">
           <h2 class="h2 insulation__title">Утеплитель. Кровельные пленки и мембраны</h2>
           <p class="insulation__subtitle">Пароизоляция / Гидроизоляция</p>
