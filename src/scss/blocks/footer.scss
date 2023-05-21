@@ -51,6 +51,37 @@
   padding-top: 16px;
 }
 
+.footer__materials {
+  @include clear-list;
+  position: absolute;
+  top: -385px;
+  padding: 30px 20px;
+  background-color: $basic-white;
+  border-radius: 8px;
+  box-shadow: 4px 4px 15px 0 $button-shadow;
+  width: 240px;
+  z-index: 20;
+}
+
+.footer__materials--show {
+  display: none;
+}
+
+.footer__materials-item {
+  a {
+    color: $main-color;
+    font-size: 13px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+.footer__nav-item--materials {
+  position: relative;
+}
+
 @media (min-width: $tablet-width) {
   .footer {
     padding-top: 100px;

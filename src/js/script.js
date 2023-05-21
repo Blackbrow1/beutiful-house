@@ -103,3 +103,15 @@ window.addEventListener('keydown', function (evt) {
     }
   }
 });
+
+const footerNavItemMaterials = document.querySelector('.footer__nav-item--materials');
+const footerMaterials = document.querySelector('.footer__materials');
+
+footerNavItemMaterials.addEventListener ('click', function (evt) {
+  evt.preventDefault();
+  if (footerMaterials.classList.contains('footer__materials--show')) {
+    footerMaterials.classList.remove('footer__materials--show');
+  } else {
+    footerMaterials.classList.add('footer__materials--show');
+  }
+});
