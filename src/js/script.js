@@ -4,7 +4,7 @@ const nav = document.querySelector('.nav');
 const navItemMaterials = document.querySelector('.nav__item-materials');
 const navMaterials = document.querySelector('.nav__materials');
 const navButtonBack = document.querySelector('.nav__button-back');
-const navMaterialsItem = document.querySelectorAll('.nav__materials-item');
+//const navMaterialsItem = document.querySelectorAll('.nav__materials-item');
 
 //const headerToggleBack = document.querySelector('.header__toggle-back');
 
@@ -50,9 +50,9 @@ navButtonBack.addEventListener('click', () => {
   // navMaterials.style.display = 'none';
 });
 
-navMaterialsItem.addEventListener('click', () => {
-  nav.style.display = 'none'
-})
+// navMaterialsItem.addEventListener('click', () => {
+//   nav.style.display = 'none'
+// })
 
 // function onNavItemMaterials() {
 //   navMaterials.classList.remove('nav__materials--closed');

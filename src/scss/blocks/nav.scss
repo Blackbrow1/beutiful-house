@@ -57,10 +57,6 @@
   margin-bottom: 25px;
 }
 
-.nav__item-materials {
-  cursor: pointer;
-}
-
 .nav__button-back {
   position: relative;
   left: -6px;
@@ -113,7 +109,7 @@
     }
   }
 
-  .nav__item:hover {
+  .nav__item:not(:nth-child(2)):hover {
     &::before {
       content: "";
       position: absolute;
@@ -129,6 +125,45 @@
     display: flex;
     justify-content: space-between;
     width: 457px;
+  }
+
+  .nav__item-materials {
+    position: relative;
+
+    &:hover .nav__materials {
+      display: block;
+    }
+  }
+
+  .nav__materials {
+    top: 20px;
+    left: 15px;
+    display: block;
+    background: none;
+    padding: 30px 30px;
+    background-color: $basic-white;
+    border-radius: 8px;
+    box-shadow: 4px 4px 15px 0 $button-shadow;
+    width: 265px;
+    height: 350px;
+    display: none;
+  }
+
+  .nav__materials-item--back {
+    display: none;
+  }
+
+  .nav__materials-item {
+    font-size: 14px;
+
+    a {
+      color: $tech-color;
+      transition: all 0.3s ease;
+    }
+
+    a:hover {
+      color: $accent-color;
+    }
   }
 }
 

@@ -99,6 +99,44 @@
     padding-top: 24px;
     row-gap: 34px;
   }
+
+  .footer__materials {
+    @include clear-list;
+    position: absolute;
+    top: -430px;
+    padding: 30px 30px;
+    background-color: $basic-white;
+    border-radius: 8px;
+    box-shadow: 4px 4px 15px 0 $button-shadow;
+    width: 265px;
+    display: none;
+  }
+
+  .footer__materials-item {
+    a {
+      color: $main-color;
+      font-size: 14px;
+      transition: all 0.3s ease;
+    }
+
+    a:hover {
+      color: $accent-color;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  .footer__nav-item--materials:hover {
+    .footer__materials {
+      display: block;
+    }
+  }
+
+  .footer__nav-item--materials {
+    position: relative;
+  }
 }
 
 @media (min-width: $desktop-width) {
