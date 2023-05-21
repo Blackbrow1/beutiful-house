@@ -6,8 +6,6 @@ const navMaterials = document.querySelector('.nav__materials');
 const navButtonBack = document.querySelector('.nav__button-back');
 const navMaterialsItem = document.querySelectorAll('.nav__materials-item');
 
-//const headerToggleBack = document.querySelector('.header__toggle-back');
-
 const buttons = document.querySelectorAll('.button');
 const popup = document.querySelector('.popup');
 const popupQuit = document.querySelector('.popup__quit');
@@ -25,65 +23,27 @@ menuButton.addEventListener ('click', function (evt) {
     nav.classList.add('nav--closed');
     menuButton.classList.add('header__toggle--open');
     menuButton.classList.remove('header__toggle--close');
-
-    // headerToggleBack.style.display = 'none';
-    //navMaterials.style.display = 'none';
-    // navItemMaterials.addEventListener('click',  () => {
-    //   navMaterials.classList.add('nav__materials--closed')
-    // });
     //document.body.style.overflow = "visible";
   }
 });
 
 navItemMaterials.addEventListener('click',  () => {
   navMaterials.classList.remove('nav__materials--closed');
-  // navMaterials.style.display = 'block';
 });
 
 menuButton.addEventListener('click', () => {
   navMaterials.classList.add('nav__materials--closed');
-  //navMaterials.style.display = 'none';
 });
 
 navButtonBack.addEventListener('click', (event) => {
   event.stopImmediatePropagation()
   navMaterials.classList.add('nav__materials--closed');
-  // navMaterials.style.display = 'none';
 });
 
 navMaterialsItem.forEach((item) => item.addEventListener('click', () => {
   nav.classList.add('nav--closed');
   navMaterials.classList.add('nav__materials--closed');
-  // nav.style.display = 'none'
 }));
-
-// function onNavItemMaterials() {
-//   navMaterials.classList.remove('nav__materials--closed');
-// };
-
-// menuButton.addEventListener ('click', function (evt) {
-//   evt.preventDefault();
-//   if (menuButton.classList.contains('header__toggle--open')) {
-//     menuButton.classList.remove('header__toggle--open');
-//     menuButton.classList.add('header__toggle--close');
-//     nav.style.display = 'block';
-//     navItemMaterials.addEventListener('click',  onNavItemMaterials);
-//     //document.body.style.overflow = "hidden";
-//   } else {
-//     menuButton.classList.remove('header__toggle--close');
-//     menuButton.classList.add('header__toggle--open');
-//     nav.style.display = 'none';
-//     headerToggleBack.style.display = 'none';
-//     navMaterials.style.display = 'none';
-//     navItemMaterials.removeEventListener('click',  onNavItemMaterials);
-//     //document.body.style.overflow = "visible";
-//   }
-// });
-
-// headerToggleBack.addEventListener('click', () => {
-//   navMaterials.style.display = 'none';
-//   headerToggleBack.style.display = 'none';
-// });
 
 buttons.forEach(function(btn) {
   btn.addEventListener('click', function(e) {
@@ -110,8 +70,7 @@ window.addEventListener('keydown', function (evt) {
 const footerNavItemMaterials = document.querySelector('.footer__nav-item--materials');
 const footerMaterials = document.querySelector('.footer__materials');
 
-footerNavItemMaterials.addEventListener('click', function (evt) {
-  // evt.preventDefault();
+footerNavItemMaterials.addEventListener('click', function () {
   if (footerMaterials.classList.contains('footer__materials--show')) {
     footerMaterials.classList.remove('footer__materials--show');
   } else {
