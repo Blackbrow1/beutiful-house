@@ -4,7 +4,7 @@ const nav = document.querySelector('.nav');
 const navItemMaterials = document.querySelector('.nav__item-materials');
 const navMaterials = document.querySelector('.nav__materials');
 const navButtonBack = document.querySelector('.nav__button-back');
-//const navMaterialsItem = document.querySelectorAll('.nav__materials-item');
+const navMaterialsItem = document.querySelectorAll('.nav__materials-item');
 
 //const headerToggleBack = document.querySelector('.header__toggle-back');
 
@@ -45,14 +45,17 @@ menuButton.addEventListener('click', () => {
   //navMaterials.style.display = 'none';
 });
 
-navButtonBack.addEventListener('click', () => {
+navButtonBack.addEventListener('click', (event) => {
+  event.stopImmediatePropagation()
   navMaterials.classList.add('nav__materials--closed');
   // navMaterials.style.display = 'none';
 });
 
-// navMaterialsItem.addEventListener('click', () => {
-//   nav.style.display = 'none'
-// })
+navMaterialsItem.forEach((item) => item.addEventListener('click', () => {
+  nav.classList.add('nav--closed');
+  navMaterials.classList.add('nav__materials--closed');
+  // nav.style.display = 'none'
+}));
 
 // function onNavItemMaterials() {
 //   navMaterials.classList.remove('nav__materials--closed');
@@ -107,8 +110,8 @@ window.addEventListener('keydown', function (evt) {
 const footerNavItemMaterials = document.querySelector('.footer__nav-item--materials');
 const footerMaterials = document.querySelector('.footer__materials');
 
-footerNavItemMaterials.addEventListener ('click', function (evt) {
-  evt.preventDefault();
+footerNavItemMaterials.addEventListener('click', function (evt) {
+  // evt.preventDefault();
   if (footerMaterials.classList.contains('footer__materials--show')) {
     footerMaterials.classList.remove('footer__materials--show');
   } else {
