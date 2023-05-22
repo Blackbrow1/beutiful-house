@@ -43,6 +43,9 @@ navButtonBack.addEventListener('click', (event) => {
 navMaterialsItem.forEach((item) => item.addEventListener('click', () => {
   nav.classList.add('nav--closed');
   navMaterials.classList.add('nav__materials--closed');
+  // document.body.style.overflow = "visible";
+  menuButton.classList.add('header__toggle--open');
+  menuButton.classList.remove('header__toggle--close');
 }));
 
 buttons.forEach(function(btn) {

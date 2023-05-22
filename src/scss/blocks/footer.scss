@@ -82,6 +82,12 @@
   position: relative;
 }
 
+.footer__materials-title {
+  font-size: 14px;
+  color: $basic-white;
+  cursor: pointer;
+}
+
 @media (min-width: $tablet-width) {
   .footer {
     padding-top: 100px;
@@ -167,6 +173,10 @@
 
   .footer__nav-item--materials {
     position: relative;
+  }
+
+  .footer__materials-title {
+    font-size: 16px;
   }
 }
 
