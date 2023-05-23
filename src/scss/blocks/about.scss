@@ -64,15 +64,11 @@
     content: "";
     width: 280px;
     height: 280px;
-    background: url("../img/about/about.png") no-repeat 0 0;
+    background-image: url("../img/about/about@1.5x.png");;
+    background-size: 280px 280px;
     position: absolute;
     left: 0;
     bottom: 30px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/about/about@2x.png");
-      background-size: 280px 280px;
-    }
   }
 }
 
@@ -125,14 +121,10 @@
     &::after {
       width: 695px;
       height: 479px;
-      background: url("../img/about/about-tablet.png") no-repeat;
+      background-image: url("../img/about/about-tablet@1.5x.png");
+      background-size: 695px 479px;
       left: 30px;
       bottom: 0;
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/about/about-tablet@2x.png");
-        background-size: 695px 479px;
-      }
     }
   }
 
@@ -166,14 +158,10 @@
     &::after {
       width: 798px;
       height: 549px;
-      background: url("../img/about/about-desktop.png") no-repeat 0 0;
+      background-image: url("../img/about/about-desktop@1.5x.png");
+      background-size: 798px 549px;
       left: 464px;
       bottom: 257px;
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/about/about-desktop@2x.png");
-        background-size: 798px 549px;
-      }
     }
   }
 

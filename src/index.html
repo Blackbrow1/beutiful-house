@@ -36,7 +36,7 @@
 
         <nav class="header__nav nav nav--closed">
           <ul class="nav__list">
-            <li class="nav__item"><a href="#header">Начало</a></li>
+            <li class="nav__item nav__item-mob"><a href="#header">Начало</a></li>
             <li class="nav__item nav__item-materials">
               <a href="#" class="nav__item-materials-link">Материалы</a>
               <ul class="nav__materials nav__materials--closed">
@@ -54,8 +54,8 @@
                 <li class="nav__materials-item"><a href="#insulation">Утеплитель. Кровельные плёнки и мембраны</a></li>
               </ul>
             </li>
-            <li class="nav__item"><a href="#about-us">О компании</a></li>
-            <li class="nav__item"><a href="#contacts">Контакты</a></li>
+            <li class="nav__item nav__item-mob"><a href="#about-us">О компании</a></li>
+            <li class="nav__item nav__item-mob"><a href="#contacts">Контакты</a></li>
           </ul>
         </nav>
 
@@ -824,8 +824,8 @@
       <p class="popup__text">Узнать об актуальных ценах и наличии товаров можно отправив форму записи</p>
 
       <form action="" method="post">
-        <input class="popup__name" type="text" name="name" id="name" placeholder="Ваше имя">
-        <input class="popup__tel" type="tel" name="tel" id="tel" placeholder="Номер телефона">
+        <input class="popup__name" type="text" name="name" id="name" placeholder="Ваше имя" required>
+        <input class="popup__tel" type="tel" name="tel" id="tel" placeholder="Номер телефона" required>
 
         <input class="popup__button" type="submit" value="Отправить">
 

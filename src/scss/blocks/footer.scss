@@ -54,7 +54,7 @@
 .footer__materials {
   @include clear-list;
   position: absolute;
-  top: -385px;
+  top: -425px;
   padding: 30px 20px;
   background-color: $basic-white;
   border-radius: 8px;
@@ -74,7 +74,7 @@
   }
 
   &:not(:last-child) {
-    margin-bottom: 16px;
+    margin-bottom: 22px;
   }
 }
 
