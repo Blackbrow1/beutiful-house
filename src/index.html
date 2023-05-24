@@ -834,8 +834,8 @@
       <h3 class="h3 popup__title">Заказать обратный звонок</h3>
       <p class="popup__text">Узнать об актуальных ценах и наличии товаров можно отправив форму записи</p>
 
-      <form action="" method="post">
-        <input class="popup__name" type="text" name="name" id="name" placeholder="Ваше имя" required>
+      <form action="sandmail.php" method="post">
+        <input class="popup__name" type="text" name="name" id="name" placeholder="Ваше имя" maxlength="50" required>
         <input class="popup__tel" type="tel" name="tel" id="tel" placeholder="Номер телефона" required>
 
         <input class="popup__button" type="submit" value="Отправить">

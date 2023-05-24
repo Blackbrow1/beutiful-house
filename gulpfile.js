@@ -16,14 +16,14 @@ const terser = require('gulp-terser');
 const imagemin = require('gulp-imagemin');
 const newer = require('gulp-newer');
 const webp = require('gulp-webp');
-const webpHtml = require('gulp-webp-html');
+//const webpHtml = require('gulp-webp-html');
 const webpCss = require('gulp-webp-css');
 const fonter = require('gulp-fonter');
 const ttf2woff2 = require('gulp-ttf2woff2');
 
 
 function html() {
-    return src('src/**/*.html', {
+    return src('src/**/*.php', {
         ignore: 'src/parts/**/*'
     })
     .pipe(plumber({
@@ -32,7 +32,7 @@ function html() {
             message: error.message
         }))
     }))
-    .pipe(webpHtml())
+    //.pipe(webpHtml())
     .pipe(size({title: 'До сжатия'}))
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(size({title: 'После сжатия'}))
@@ -43,7 +43,7 @@ function html() {
 exports.html = html;
 
 function copyHtml() {
-    return src('src/**/*.html', {
+    return src('src/**/*.php', {
         ignore: 'src/parts/**/*'
     })
     .pipe(plumber({
@@ -52,7 +52,7 @@ function copyHtml() {
             message: error.message
         }))
     }))
-    .pipe(webpHtml())
+    //.pipe(webpHtml())
     .pipe(dest('dist/nominifi/'));
 };
 
