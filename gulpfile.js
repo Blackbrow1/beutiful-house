@@ -23,7 +23,7 @@ const ttf2woff2 = require('gulp-ttf2woff2');
 
 
 function html() {
-    return src('src/**/*.php', {
+    return src('src/**/*.html', {
         ignore: 'src/parts/**/*'
     })
     .pipe(plumber({
@@ -43,7 +43,7 @@ function html() {
 exports.html = html;
 
 function copyHtml() {
-    return src('src/**/*.php', {
+    return src('src/**/*.html', {
         ignore: 'src/parts/**/*'
     })
     .pipe(plumber({

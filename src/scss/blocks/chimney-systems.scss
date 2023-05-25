@@ -105,6 +105,10 @@
 
   .chimney-systems__title {
     margin-bottom: 52px;
+
+    br {
+      display: none;
+    }
   }
 
   .chimney-systems__description {
