@@ -6,7 +6,7 @@ function clear_data($val) {
   return $val;
 }
 
-$to = "alesandro83@mail.ru";
+$to = "info@krasadom.ru, krasadom@internet.ru, spichkov.vladimir@yandex.ru, alesandro83@mail.ru";
 $from = clear_data($_POST['name']);
 
 $subject = "Заявка с сайта krasadom.ru";
