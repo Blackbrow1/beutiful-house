@@ -13,7 +13,8 @@
 
 .contacts__city,
 .contacts__address,
-.contacts__time {
+.contacts__time,
+.contacts__email {
   margin-top: 0;
   margin-bottom: 7px;
 }
@@ -23,9 +24,20 @@
   font-weight: 700;
 }
 
+.contacts__email,
+.contacts__phone {
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.contacts__phone {
+  margin: 0;
+}
+
 .contacts__city,
 .contacts__phone {
-  text-decoration: none;
   color: $main-color;
 }
 
@@ -81,7 +93,7 @@
 
   .contacts__description {
     position: absolute;
-    top: 235px;
+    top: 220px;
     left: 38px;
     width: 380px;
     padding-top: 34px;
