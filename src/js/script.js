@@ -93,33 +93,3 @@ navItemMob.forEach((item) => item.addEventListener('click', () => {
   menuButton.classList.add('header__toggle--open');
   menuButton.classList.remove('header__toggle--close');
 }));
-
-// const phone = popup.querySelector('[name=tel]');
-// const form = popup.querySelector('form');
-
-// form.addEventListener('submit', function(evt) {
-//   if (!name.value || !phone.value) {
-//     evt.preventDefault();
-//     popup.classList.add('modal-error');
-//   }
-// });
-
-// window.onload = function(){
-//   const divToHide = document.querySelector('.footer__materials');
-//   document.onclick = function(e){
-//     if(e.target.id !== 'divToHide'){
-//       //element clicked wasn't the div; hide the div
-//       divToHide.style.display = 'none';
-//     }
-//   };
-// };
-
-
-// var modal = document.querySelector('.footer__materials');
-
-// // When the user clicks anywhere outside of the modal, close it
-// window.onclick = function(event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// }

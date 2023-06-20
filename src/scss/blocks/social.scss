@@ -30,6 +30,16 @@
   background-color: $basic-white;
 }
 
+.social--none {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .social--none {
+    display: block;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .social {
     order: -1;

@@ -59,10 +59,6 @@
   @include wrapper-mob;
 }
 
-.social {
-  display: none;
-}
-
 .header__contacts-wrap {
   display: flex;
   justify-content: space-between;
@@ -141,10 +137,6 @@
   .header__logo {
     position: relative;
     top: -7px;
-  }
-
-  .social {
-    display: block;
   }
 
   .header__contacts-phone {
